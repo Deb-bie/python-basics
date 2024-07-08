@@ -1,9 +1,18 @@
-# VARIABLES
-print("Learning python")
+class Person():
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-# using variable names
-message = "I'm learning python again"
-print(message)
+    def my_name(self):
+        print("My name is " + self.name)
 
-# combining strings
-first
+    def my_age(self):
+        print("I'm " + str(self.age) + " years old")
+
+    def __str__(self):
+        return f"name: {self.name}, age: {self.age}"
+
+me = Person("Debss", 3)
+print(me)
+me.my_name()
+me.my_age()
